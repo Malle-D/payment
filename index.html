@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/bootstrap.css">
+   <link rel="stylesheet" href="./css/bootstrap.min.css">
+   <title>bootstrap</title>
+</head>
+<body>
+   
+   <div class="container pt-3 pb-4">
+      <h1 class="fs-6 mb-5">Cart - Customer Information - Shipping method - <span class="fw-bold">Payment Method</span></h1>
+      
+      <form class="form" method="post" autocomplete="off" action="https://echo.htmlacademy.ru/courses">
+         
+         <div class="row g-5">
+            
+            <div class="col-8">
+               
+               <div class="shadow py-4 px-4">
+                  
+                  <h2 class="h2 mb-4">
+                     Payment Information
+                  </h2>
+                  
+                  
+                  
+                  <div class="mb-3">
+                     <label for="exampleInputPassword1" class="form-label">Card Number</label>
+                     <input name="card number" required type="password" class="form-control" id="exampleInputPassword1" maxlength="16">
+                  </div>
+                  
+                  <div class="row">
+                     <div class="col-6">
+                        <div>
+                           <label for="Holder" class="form-label">Card Holder</label>
+                           <input name="holder" required type="text" class="form-control" id="Holder" aria-describedby="emailHelp">
+                        </div>
+                     </div>
+                     <div class="col-3">
+                        <div>
+                           <label for="date" class="form-label">EXP. DATE</label>
+                           <input name="card exp date" required type="number" class="form-control" id="date" aria-describedby="emailHelp" maxlength="4">
+                        </div>
+                     </div>
+                     <div class="col-3">
+                        <div>
+                           <label for="CVV" class="form-label">CVV</label>
+                           <input name="cvv" required type="password" class="form-control" id="CVV" aria-describedby="emailHelp" maxlength="3">
+                        </div>
+                     </div>
+                  </div>
+                  
+                  
+               </div>
+               
+            </div>
+            
+            
+            <div class="col-4">
+               
+               <div class="shadow p-4">
+                  
+                  <div class="d-flex align-items-center border-bottom pb-4">
+                     
+                     <div class="position-relative me-3">
+                        <img style="object-fit: cover;" src="./img/1.jpg" alt="terror" width="60" height="50">
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+                           2
+                           <span class="visually-hidden">unread messages</span>
+                        </span>
+                     </div>
+                     
+                     <h2 class="fs-6 m-0 me-auto">
+                        Chocolate Bar
+                     </h2>
+                     <p class="m-0 fw-bold fs-6">
+                        $2.49
+                     </p>
+                     
+                  </div>
+                  
+                  <div class="py-3 border-bottom">
+                     
+                     <div class="d-flex pb-2">
+                        <p class="m-0 me-auto">
+                           Subtotal
+                        </p>
+                        <p class="m-0">
+                           $4.99
+                        </p>
+                     </div>
+                     <div class="d-flex">
+                        <p class="m-0 me-auto">
+                           Shipping
+                        </p>
+                        <p class="m-0">
+                           $3.00
+                        </p>
+                     </div>
+                     
+                  </div>
+                  
+                  <div class="d-flex align-items-center pt-3">
+                     
+                     <h3 class="fs-6 m-0 me-auto">
+                        Total
+                     </h3> 
+                     
+                     <p class="fw-bold m-0">
+                        $7.99
+                     </p>
+                     
+                  </div>
+                  
+               </div>
+               
+            </div>
+            
+            
+            <div class="col-8">
+               
+               <div class="shadow py-4 px-4">
+                  
+                  <h2 class="h2 mb-5 pb-4 border-bottom">
+                     Billing Address
+                  </h2>
+                  
+                  <div class="form-check pb-3">
+                     <input class="form-check-input" type="radio" name="User Address" id="flexRadioDefault1">
+                     <label class="form-check-label" for="flexRadioDefault1">
+                        Same as the shiping address
+                     </label>
+                  </div>
+                  <div class="form-check pt-3 border-top">
+                     <input class="form-check-input" type="radio" name="User Address" id="flexRadioDefault2" checked>
+                     <label class="form-check-label" for="flexRadioDefault2">
+                        Use a different address
+                     </label>
+                  </div>
+                  
+               </div>
+               
+            </div>
+            
+         </div>
+         
+         <div class="d-flex align-items-center w-75 pt-4">
+            
+            <p class="text-primary m-0 me-auto">
+               <a href="#" class="text-decoration-none">Return to shipping method</a>
+            </p>
+            
+            <button type="submit" class="btn btn-primary me-5">
+               Complate Order
+            </button>
+            
+         </div>
+         
+      </form>
+      
+   </div>
+   
+</body>
+</html>
